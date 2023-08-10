@@ -1,4 +1,4 @@
-name: Changesets
+name: custom-branches-changeset-action
 description: A GitHub action to automate releases with Changesets
 runs:
   using: "node16"
@@ -28,6 +28,9 @@ inputs:
     description: "A boolean value to indicate whether to create Github releases after `publish` or not"
     required: false
     default: true
+  version-branch:
+    description: Sets the branch to which the versioning commits and release PR will be made. Defaults to `changeset-release/{github.ref_name}`.
+    required: false
 outputs:
   published:
     description: A boolean value to indicate whether a publishing is happened or not

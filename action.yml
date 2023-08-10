@@ -1,4 +1,4 @@
-name: custom-branches-changeset-action
+name: custom-branches-changeset-action-clipsal
 description: A GitHub action to automate releases with Changesets
 runs:
   using: "node16"
